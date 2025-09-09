@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Kumar | Full Stack Development Learner</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --accent: #FF5722;
+            --bg: #f5f5f5;
+            --text: #333;
+            --card-bg: #fff;
+            --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .content {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--primary);
+        }
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .about img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #ccc;
+            object-fit: cover;
+        }
+        .about-text {
+            max-width: 600px;
+            text-align: center;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+        .skill-item:hover {
+            transform: scale(1.05);
+            background-color: var(--primary);
+        }
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        .project-title {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .project-desc {
+            font-size: 1rem;
+            color: var(--text);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Praveen Kumar</h1>
+        <p>Beginner to Learn Full Stack Development</p>
+    </header>
+
+    <div class="content">
+
+        <!-- About Section -->
+        <section class="section about">
+            <img src="https://via.placeholder.com/120" alt="Profile Picture">
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>Hello! I'm Praveen, a beginner learning full stack development. I'm passionate about building dynamic web applications and solving real-world problems using code. I have experience in Java, Python, and SQL, and I'm constantly improving my skills.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">Java Basics</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">SQL</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-card">
+                <div class="project-title">Lung Cancer Detection</div>
+                <div class="project-desc">A machine learning project aimed at detecting lung cancer from medical images, utilizing Python and various machine learning libraries.</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Praveen Kumar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

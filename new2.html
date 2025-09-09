@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Kumar | Full Stack Development Learner</title>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --accent: #10b981;
+            --bg: #f3f4f6;
+            --text: #333;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .about, .skills, .projects {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* About Section */
+        .about-card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: #e5e7eb;
+        }
+
+        .about-card h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #4b5563;
+        }
+
+        /* Skills Section */
+        .skills-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            flex: 1;
+            text-align: center;
+        }
+
+        .skills-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+        }
+
+        .skill-item {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.1);
+            background-color: var(--accent);
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h4 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .about, .skills, .projects {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Praveen Kumar</h1>
+        <p>Beginner to Learn Full Stack Development</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- About Section -->
+        <section class="section about">
+            <div class="about-card">
+                <img src="https://via.placeholder.com/120" alt="Profile Picture">
+                <h2>About Me</h2>
+                <p>Hello! I’m Praveen Kumar, a beginner in full-stack development. I’m currently learning the ins and outs of building dynamic and responsive web applications. I am passionate about programming and problem-solving!</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills">
+            <div class="skills-card">
+                <h3>Skills</h3>
+                <div class="skills-list">
+                    <div class="skill-item">Java Basics</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">SQL</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects">
+            <div class="project-card">
+                <h4>Lung Cancer Detection</h4>
+                <p>This project uses machine learning algorithms to detect lung cancer from medical images. It utilizes Python and ML libraries like TensorFlow and Keras to build a predictive model.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Praveen Kumar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
