@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Kumar | Full Stack Development Learner</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --accent: #FF5722;
+            --bg: #f7f8fa;
+            --text: #333;
+            --card-bg: #fff;
+            --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 50px;
+        }
+        .content h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+        .content .card {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card .card-item {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            flex: 1;
+            text-align: center;
+        }
+        .card .card-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: #e5e7eb;
+        }
+        .card .card-item h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .card .card-item p {
+            color: #6b7280;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .skills .skill {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        .skills .skill:hover {
+            transform: scale(1.1);
+            background-color: var(--accent);
+        }
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Praveen Kumar</h1>
+        <p>Beginner to Learn Full Stack Development</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- About Section -->
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello! I’m Praveen Kumar, a beginner in full-stack development. I’m currently learning how to build dynamic and responsive web applications. I am passionate about coding and problem-solving!</p>
+
+            <div class="card">
+                <div class="card-item">
+                    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+                    <h3>Praveen Kumar</h3>
+                    <p>Aspiring Full Stack Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="content">
+            <h2>Skills</h2>
+            <p>Here are the technologies I’m currently learning and working with:</p>
+
+            <div class="skills">
+                <div class="skill">Java Basics</div>
+                <div class="skill">Python</div>
+                <div class="skill">SQL</div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="content">
+            <h2>Projects</h2>
+            <p>Check out my current project focused on using machine learning for medical detection.</p>
+
+            <div class="card">
+                <div class="card-item">
+                    <h3>Lung Cancer Detection</h3>
+                    <p>A machine learning project aimed at detecting lung cancer from medical images using Python, TensorFlow, and Keras.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Praveen Kumar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
