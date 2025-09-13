@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      background-color: lightgray; /* Default background */
+      font-family: Arial, sans-serif;
+    }
+    .temp {
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid black;
+    }
+    #list {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>hello jquery</h2>
+  <h3>just for timepass</h3>
+  <button id="btn">Click Me</button>
+
+  <div class="temp">
+    <p>this is a different division on which we are using the class tags using jquery</p>
+  </div>    
+
+  <input type="text" id="myInput" placeholder="Type something...">
+  <p id="output">Hi this text</p>
+
+  <ul id="list">
+    <li>Item 1</li>
+  </ul>
+
+  <button id="add">Add Item</button>
+  <button id="addf">Add Item First</button>
+  <button id="remove">Remove First</button>
+
+  <script>
+    $(document).ready(function(){
+      // Single Click
+      $("#btn").click(function(){
+        $("h2").text("Button Clicked!");
+        $("h3").text("Button Clicked! Duplicate");
+        $(".temp").css("background-color", "yellow");
+        $("p").css("font-weight", "bold");
+        $("body").css("background-color", "#f0f8ff"); // Light blue background
+      });
+
+      // Double Click
+      $("#btn").dblclick(function(){
+        $("h2").text("Button Clicked Twice!");
+        $("h3").text("Button Clicked Twice! Duplicate");
+        $(".temp").css("background-color", "orange");
+        $("p").css("font-family", "Calibri");
+        $("body").css("background-color", "#ffe4b5"); // Moccasin background
+      });
+
+      // Hover
+      $("#btn").hover(function(){
+        $("h2").text("Button Hovered!");
+        $("h3").text("Button Hovered! Duplicate");
+        $(".temp").css("background-color", "cyan");
+        $("p").css("font-style", "italic");
+        $("body").css("background-color", "#e6e6fa"); // Lavender background
+      });
+
+      // Add Item at End
+      $("#add").click(function(){
+        $("#list").append("<li>New Item appended from script</li>");
+      });
+
+      // Add Item at Start
+      $("#addf").click(function(){
+        $("#list").prepend("<li>New Item prepended from script</li>");
+      });
+
+      // Remove First Item
+      $("#remove").click(function(){
+        $("#list li:first").remove();
+      });
+
+      // Live Input Update
+      $("#myInput").on("input", function(){
+        let val = $(this).val();
+        $("#output").text(val);
+      });
+    });
+  </script>
+</body>
+</html>
